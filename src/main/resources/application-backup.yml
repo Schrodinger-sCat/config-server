@@ -1,0 +1,22 @@
+shanto:
+  message: "ggwp ${shanto.id}"
+  id: 02
+  name: "Toyaeeb"
+list:
+  example: "Abdullah,Al,Toyaeeb,Shanto"
+  example2: 1,2,3,4,5
+info:
+  map:
+    id: 3
+    name: 'Erwin'
+    message: 'shinzou sasageyo'
+    info:
+      map: "{id:3, idname:'Erwin', message:'shinzou sasageyo'}"
+db:
+  connection:
+    host: "10.42.65.131"
+    port: 4550
+    type: "jdbc:postgresql"
+    extension: "sbicloud_bd_20230406"
+    url: ${db.connection.type}://${db.connection.host}:${db.connection.port}/${db.connection.extension}
+management.endpoints.web.exposure.include: "*"
